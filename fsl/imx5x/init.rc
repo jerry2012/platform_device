@@ -532,3 +532,9 @@ service pppd_gprs /etc/init.gprs-pppd
     disabled
     oneshot
 
+########show logo when standby####        
+service show_logo /system/bin/logo             
+    user system                                    
+    group system                    
+    disabled                       
+    oneshot
